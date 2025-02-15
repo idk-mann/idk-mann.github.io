@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Cutive&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background-image: url('images/background-texture-warm-yellow.jpg');
+    background-size: 1100px auto;
+    background-repeat: repeat; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-grow: 1;
+}
+
+.heading {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.content {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    text-align: justify;
+}
+
+/* Styling for "My Projects" heading */
+.projects-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem; 
+    letter-spacing: 1px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color: #000000;
+}
+
+.project-title {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.7rem;
+    margin-top: 60px;
+    margin-right: 0;
+    margin-bottom: 20px;
+    color: #2F4F4F;
+}
+
+/*project description */
+.project-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 20px;
+    color: #4A4A4A ;
+}
+
+.video {
+  width: 100%; 
+  max-width: 640px;
+  height: auto; /* maintain aspect ratio */
+  display: block;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+
+.image-container {
+    max-width: 500px; 
+    margin: 0 auto; 
+    margin-bottom: 40px; 
+    margin-top: 40px;
+    position: relative;
+}
+
+.video-container {
+  width: 100%;
+  max-width: 640px;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+
+.portfolio-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1; 
+    object-fit: cover; 
+    border-radius: 20px;
+}
+
+.image-quote-caption{
+    padding-left: 3px;
+    font-size: 0.8rem;
+    color: #555;
+    margin-top: 10px;
+    font-style: italic;
+    overflow: hidden;
+    display: inline-block; 
+    padding-right: 2px;
+    margin: 0px;
+    text-align: left; /* align left */
+    font-family: "Cousine", serif;
+    font-weight: 400;
+    margin-top: 3px;
+}
+
+/* hide elements */
+.projects-heading, .project-description, .video {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.project-title {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+/* end of hide elements */
+
+/* revel hided element*/
+.revealY {
+    opacity: 1;
+    transform: translateY(0); }
+
+.revealX {
+    opacity: 1;
+    transform: translateX(0); 
+}
+
+.footer {
+    background-color: #2F4F4F;  
+    color: #fff; 
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.disclaimer {
+    font-size: 12px;
+    color: #d1cfc7;  
+    margin: 5px 0video}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.social-links a {
+    color: #fff;  
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.social-links a:hover {
+    color: #d1cfc7;  
+    text-decoration: underline;
+}
+
+/* -webkit-scrollbar */
+::-webkit-scrollbar {
+  width: 16px; 
+}
+
+::-webkit-scrollbar-track {
+  background-color: #F2E5C4; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #9E8A6D; 
+  border-radius: 10px;
+  border: 3px solid #F2E5C4; }
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #B49F68; 
+}
+/*end of -webkit-scrollbar */
+
+@media (max-width: 768px) {
+  main {
+    max-width: 100%; 
+    width: 95%; 
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    width: 100%; 
+    padding: 15px;
+  }
+}

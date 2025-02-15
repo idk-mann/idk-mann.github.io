@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My personal portfolio ">
+    <meta name="keywords" content="portfolio, web development, design, programming, projects">
+    <meta name="author" content="AH">
+    <title>AH05 Online Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <link rel="icon" href="images/AH-logo.ico" type="image/x-icon">
+    <script src="script.js" defer></script>
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <main>
+            <div class="post-template">
+                <div class="content-wrapper">
+
+                    <div class="image-container">
+
+                        <img src="images/CoverBackground.png" alt="Cover Page Background" class="portfolio-image" >
+                        <p id="typewriter-caption" class="image-quote-caption">Life is an adventure on its own...every moment.</p>
+                    </div>
+
+                    <div class="heading-wrapper">
+                        <h2 class="heading">Andrei's Online Profolio</h2>
+                    </div>
+                    
+                    <div class="content">
+                        <p>Born in Kuching, currently 19, I’ve spent the past two and something years diving into the world of programming. I have experience working with several programming languages, including Python, C, C#, JavaScript, HTML, and CSS. I completed my secondary studies with a GCE O-level certificate and I am currently in my second year of my Computer Science degree. One of my hobby are working with electronics especially small electronics projects such as attempting to fix broken electronics, modding keyboard or mouse.</p>
+
+                            <h2 class="projects-heading reveal-from-top ">My Projects</h2>
+
+                            <h3 class="project-title reveal-from-left"><strong>- Current Project</strong></h3>
+
+
+                            <p class="project-description reveal-from-top">I am currently working on integrating WebSocket into my 2D fighting game to enable multiplayer functionality. </p>
+
+                            <h3 class="project-title reveal-from-left"><strong>- 2D Fighting Game</strong></h3>
+
+                            <div class="video-container">
+                              <video controls class="video reveal-from-top" poster="images/2DFighterThumbnail.png">
+                                <source src="videos/2DFighterDemo.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                              </video>
+                            </div>
+
+
+                            <p class="project-description reveal-from-top">I followed a YouTube tutorial to recreate a Street Fighter-like game using JavaScript and the HTML Canvas element. This is because I want to learn from experienced developers, adopting best practices. However, I’m taking the project further by adding custom features, such as a blocking where the player takes less damage. As for the project, all of the fighter hit and hurt animations are complete. However, I acknowledge that the game is not fully polished yet, as there are hitboxes and keybinding that are still off, along with other small details.</p>
+
+                            <h3 class="project-title reveal-from-left"><strong>- Pixel Battleship</strong></h3>
+
+                            <div class="video-container">
+                              <video controls class="video reveal-from-top" poster="images/battleshipThumbnail.png">
+                                <source src="videos/BattleShipDemo.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                              </video>
+                            </div>
+
+
+                            <p class="project-description reveal-from-top ">Pixel Battleship is a recreation of the classic Battleship game using JavaScript and WebSocket, albeit with a pixified look that adds a retro, pixel art style to the gameplay. I've learned a lot, especially how to structure and organize the code. There's also logic that allows the computer to search for the ship if a hit is detected. There's additional CSS and JavaScript animations for the ship waves and hit effect.</p>
+
+                            <h3 class="project-title reveal-from-left"><strong>- Crypto</strong></h3>
+
+                            <div class="video-container">
+                              <video controls class="video reveal-from-top" poster="images/cryptoThumbnail.png">
+                                <source src="videos/cryotodemo.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                              </video>
+                            </div>  
+
+
+                            <p class="project-description reveal-from-top">CRYPTO is a flask application that I made to learn about JavaScript, Bootstrap and handling APIs response using restful CoinMarketCap basic plan API. CRYPTO has a main table to display all the relevant data about the crypto currencies, when a row is clicked a more detailed page is shown. A treemap made with D3.js offers data visualization of the cryptocurrency. </p>
+
+                            <p class="project-description reveal-from-top">Due to the constraints of the free plan, this project has limited API enpoints to work with. Unfortunately, historical data endpoints are not accessible, which means the ability to generate price graphs using API calls is not feasible. Sort functions done thru the API parameters are questionable at best. </p>
+
+                            <h3 class="project-title reveal-from-left"><strong>- Snake Game</strong></h3>
+
+                            <p class="project-description reveal-from-top">I developed a snake game that blends a modern with a nostalgic retro feel, offering a cozy and challenging experience. Built using the SDL2 library in C, the game ditches the traditional tile-based layout for a smoother design. I added random obstacles generation to increase difficulty, and introduced exciting features like food buffs that grant extra lives, adding a strategic element to the gameplay.</p>
+   
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+<footer class="footer">
+    <div class="footer-container">
+        <p class="disclaimer">This is a personal online portfolio showcasing my skills and projects.</p>
+        <p class="disclaimer">Contact: 05andreiheng@gmail.com</p>
+        <ul class="social-links">
+            <li><a href="https://github.com/idk-mann" target="_blank" title="GitHub">GitHub</a></li>
+            <li><a href="mailto:05andreiheng@gmail.com" target="_blank" title="Email">Email</a></li>
+        </ul>
+    </div>
+</footer>
+
+</html>
