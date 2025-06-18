@@ -96,12 +96,21 @@
 <footer class="footer">
     <div class="footer-container">
         <p class="disclaimer">This is a personal online portfolio showcasing my skills and projects.</p>
-        <p class="disclaimer">Contact: @gmail.com</p>
+        <p class="disclaimer">Contact: <span id="email-text"></span></p>
         <ul class="social-links">
-            <li><a href="https://github.com/idk-mann" target="_blank" title="GitHub">GitHub</a></li>
-            <li><a href="mailto:@gmail.com" target="_blank" title="Email">Email</a></li>
+          <li><a href="https://github.com/yourusername" target="_blank" title="GitHub">GitHub</a></li>
+          <li><a href="#" id="email-link" title="Email">Email</a></li>
         </ul>
     </div>
 </footer>
 
 </html>
+
+<script>
+    const user = "yourname";
+    const domain = "gmail.com";
+    const email = user + "@" + domain;
+    
+    document.getElementById("email-text").textContent = email;
+    document.getElementById("email-link").href = "mailto:" + email;
+</script>
