@@ -23,7 +23,7 @@
             <div class="post-template">
                 <div class="content-wrapper">
 
-                    <div class="image-container">
+                    <div class="profile-image-container">
 
                         <img src="images/CoverBackground.png" alt="Cover Page Background" class="portfolio-image" >
                         <p id="typewriter-caption" class="image-quote-caption">Life is an adventure on its own...every moment.</p>
@@ -38,10 +38,64 @@
 
                             <h2 class="projects-heading reveal-from-top ">My Projects</h2>
 
-                            <h3 class="project-title reveal-from-left"><strong>- Current Project</strong></h3>
+                            <h3 class="project-title reveal-from-left"><strong>- BlueSkies</strong></h3>
+
+                            <p class="project-description reveal-from-top">
+                                 <p><strong>BlueSkies</strong> is a solo-developed modern Android weather app designed to keep users informed without needing to constantly check the forecast. It features real-time weather updates and personalized alerts, with a clean, responsive UI built using the latest Android design principles.</p>
+
+                                <div class="slideshow-container">
+                                    <div class="slide slideshow-fade">
+                                        <img src="images/MainScreenPhoneMockUp.png" alt="MainScreenPhoneMockUp">
+                                    </div>
+                                    <div class="slide slideshow-fade">
+                                        <img src="images/NotificationPhoneMockUp.png" alt="NotificationPhoneMockUp">
+                                    </div>
+                                    <div class="slide slideshow-fade">
+                                        <img src="images/SettingsPhoneMockUp.png" alt="SettingsPhoneMockUp">
+                                    </div>  
+                                </div>
 
 
-                            <p class="project-description reveal-from-top">I've finished integrating the WebSocket element into the game. Now I just need to polish a dozen things.</p>
+                                <h4 class="project-subtitle"><strong>Key Features:</strong></h3>
+                                <ul class="info-list">
+                                    <li>Real-time weather data powered by Tomorrow.io API</li>
+                                    <li>Customizable forecast range: 1 to 7 days</li>
+                                    <li>Up to 10 personalized daily weather notifications with user-defined times</li>
+                                    <li>Map-based location picker and city autocomplete with offline support via Room</li>
+                                    <li>Dynamic background themes based on time of day at the selected location (sunrise, sunset, night, etc.)</li>
+                                    <li>Fully responsive UI with Material 3 and system-wide dark/light mode support</li>
+                                </ul>
+
+                                <h4 class="project-subtitle"><strong>Technical Highlights:</strong></h3>
+                                <ul class="info-list">
+                                    <li>Asynchronous loading of weather data and UI components using <strong>Kotlin Coroutines</strong></li>
+                                    <li>Weather API integration using <strong>Retrofit</strong> for efficient, scalable network communication</li>
+                                    <li>City autocomplete via local <strong>Room database</strong> for fast, offline-capable suggestions</li>
+                                    <li><strong>WorkManager</strong> for reliable background delivery of weather notifications</li>
+                                    <li><strong>RecyclerView</strong> for efficient rendering of dynamic forecast lists</li>
+                                    <li><strong>Dynamic theming</strong> tied to location-based time data (e.g. day/night transitions)</li>
+                                    <li><strong>MVVM architecture</strong> to ensure maintainability and scalability</li>
+                                </ul>
+
+                                <h4 class="project-subtitle"><strong>What I’ve Learned:</strong></h3>
+                                <p>
+                                    BlueSkies helped me strengthen my understanding of asynchronous programming, clean architecture, REST API integration, and advanced UI design in Android. It was a valuable learning experience, particularly in applying <span class="highlight">MVVM architecture, Kotlin Coroutines, and WorkManager for reliable background processing</span>. I gained valuable backend experience by building features like personalized notifications and time-aware theming, which allowed me to deliver a more dynamic and user-focused experience.
+                                </p>
+
+                                <strong>Source Code:</strong> <a href="https://github.com/yourusername/BlueSkies" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+
+                                <div class="portrait-video-dropdown">
+                                    <button class="dropdown-toggle project-subtitle">My Android App Demo</button>
+                                    <div class="video-dropdown-content">
+                                        <video controls playsinline>
+                                            <source src="videos/WeatherAppDemo.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                </div>
+
+                            </p>
+
 
                             <h3 class="project-title reveal-from-left"><strong>- 2D Fighting Game</strong></h3>
 
@@ -81,9 +135,7 @@
 
                             <p class="project-description reveal-from-top">Due to the constraints of the free plan, this project has limited API enpoints to work with. Unfortunately, historical data endpoints are not accessible, which means the ability to generate price graphs using API calls is not feasible. Sort functions done thru the API parameters are questionable at best. </p>
 
-                            <h3 class="project-title reveal-from-left"><strong>- Snake Game</strong></h3>
 
-                            <p class="project-description reveal-from-top">I developed a snake game that blends a modern with a nostalgic retro feel, offering a cozy and challenging experience. Built using the SDL2 library in C, the game ditches the traditional tile-based layout for a smoother design. I added random obstacles generation to increase difficulty, and introduced exciting features like food buffs that grant extra lives, adding a strategic element to the gameplay.</p>
    
                     </div>
 
